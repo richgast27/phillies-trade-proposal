@@ -197,8 +197,6 @@ names(outfielders_last3)[2] <- "Player"
 ## Isolate players who are in their final two years of arbitration or going into a contract year
 last2_arb_years <- subset(mlb_arbitration, mlb_arbitration$YOS >= "4")
 
-walk_year <- subset(mlb_contracts, mlb_contracts$End == "2025")
-
 
 
 walk_year <- subset(mlb_contracts, !(mlb_contracts$Start == "2025" & mlb_contracts$End == "2025"))
